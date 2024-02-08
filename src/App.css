@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .purple_gradient_text {
+        @apply bg-gradient-to-r from-[#a09af7] to-primary bg-clip-text text-transparent;
+    }
+
+    .btn {
+        @apply text-white bg-gradient-to-r from-[#a09af7] to-primary focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+    }
+
+    .header {
+        @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    }
+
+    .homeInfoDiv {
+        @apply text-center relative flex font-semibold rounded-lg bg-white text-black flex-col max-w-2xl pt-4 pb-12 px-8;
+    }
+
+    .homeInfoButton {
+        @apply py-2 px-6 absolute top-20 bg-primary border border-primary rounded-full text-white font-semibold flex justify-center items-center mx-auto gap-3 transition-all hover:bg-white hover:text-primary pointer-events-auto;
+    }
+
+    .homeDarkModeIcon {
+        @apply h-10 w-10 rounded-full bg-[#5A4EF6] text-white flex items-center justify-center
+    }
+
+    .carouselContainer {
+        @apply w-[100%] md:w-[55%] overflow-hidden mt-4 md:mt-0 h-[45%] md:h-[100%] flex items-center bg-transparent
+    }
+
+    .pimagesContainer {
+        @apply w-[100%] h-[100%] flex flex-row items-end bg-transparent
+    }
+
+    .pimages {
+        @apply w-[100%] h-[100%]
+    }
+
+    .projectInfo {
+        @apply w-[100%] md:w-[45%] h-[55%] md:h-[100%] sm:pb-4 object-contain mt-5 flex flex-col justify-center pl-8 pr-4
+    }
+
+    .techSkillDiv {
+        @apply flex flex-col items-center bg-slate-200 shadow-xl pb-6 pt-4 rounded-lg hover:bg-white
+    }
+
+    .techSkillDivHeading {
+        @apply font-semibold text-xl my-4
+    }
+
+    .contactIcon {
+        @apply font-semibold text-xl
+    }
+
+    .contacFormInput {
+        @apply h-16 outline-none transition-all border-b-2 w-[65%] focus:border-b-primary my-10 focus:border-b-4 px-2 font-semibold text-lg
+    }
+
+
+    .customButtonForForm {
+        @apply h-16 outline-none transition-all border-2 w-[90%] uppercase md:w-[62%] mb-4 px-[5vw] text-lg cursor-pointer rounded-full relative overflow-hidden
+    }
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projectForm {
+    transition: all ease-out 0.5s;
 }

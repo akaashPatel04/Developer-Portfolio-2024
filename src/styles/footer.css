@@ -1,0 +1,81 @@
+.linkIcons {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    width: 100%;
+    color: black;
+    position: relative;
+    padding: 0 4vw;
+}
+
+.linkIcons>.arrowIcon {
+    font-size: 32px;
+    color: black;
+    position: relative;
+    transition: all ease .5s;
+}
+
+.linkIcons>.textInfo {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    position: relative;
+    transition: all ease .5s;
+}
+
+.linkIcons>.animatedOverlay {
+    height: 0%;
+    width: 100%;
+    background-color: #5A4EF6;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease .5s;
+}
+
+.linkIcons:hover>.animatedOverlay {
+    height: 100%;
+}
+
+.linkIcons:hover>.textInfo,
+.linkIcons:hover>.arrowIcon {
+    color: #fff;
+}
+
+@media (max-width:550px) {
+    .linkIcons {
+        height: 10vh;
+        font-size: 22px;
+        padding: 0 4vw;
+    }
+
+    .linkIcons>.textInfo {
+        gap: 4vw;
+    }
+
+    .linkIcons>.arrowIcon {
+        font-size: 22px;
+    }
+}
+
+.customButtonForForm:hover>.customButtonForFormInnerDiv {
+    width: 100%;
+    opacity: 1;
+}
+
+.customButtonForFormInnerDiv {
+    position: absolute;
+    width: 30%;
+    opacity: 0;
+    height: 100%;
+    background: #bebaff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    transition: width ease-out 0.3s;
+    border-radius: inherit;
+}
