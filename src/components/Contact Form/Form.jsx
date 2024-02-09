@@ -114,7 +114,7 @@ const Form = ({ contactFormToggler }) => {
               loading && "opacity-75"
             }`}
           >
-            {loading ? "Send" : "..."}
+            Send
           </button>
         ) : (
           <button
