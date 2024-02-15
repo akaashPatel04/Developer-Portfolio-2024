@@ -22,10 +22,10 @@ import Exchanges from "../assets/images/crypto/Exchanges.png";
 import CoinPage from "../assets/images/crypto/CoinPage.png";
 import CoinPage2 from "../assets/images/crypto/CoinPage2.png";
 
-import feed from "../assets/images/feed.PNG";
-import profile from "../assets/images/profile.PNG";
-import register from "../assets/images/register.PNG";
-import search from "../assets/images/search.PNG";
+import feed from "../assets/images/instagram/feed.PNG";
+import profile from "../assets/images/instagram/profile.PNG";
+import register from "../assets/images/instagram/register.PNG";
+import search from "../assets/images/instagram/search.PNG";
 
 import discFood from "../assets/images/minor/discovered-food.png";
 import discFood2 from "../assets/images/minor/discovered-food-2.png";
