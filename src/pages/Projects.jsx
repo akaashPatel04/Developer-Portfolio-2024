@@ -21,7 +21,11 @@ import Search from "../assets/images/crypto/Search.png";
 import Exchanges from "../assets/images/crypto/Exchanges.png";
 import CoinPage from "../assets/images/crypto/CoinPage.png";
 import CoinPage2 from "../assets/images/crypto/CoinPage2.png";
-import instagram from "../assets/images/instagram.jpg";
+
+import feed from "../assets/images/feed.PNG";
+import profile from "../assets/images/profile.PNG";
+import register from "../assets/images/register.PNG";
+import search from "../assets/images/search.PNG";
 
 import discFood from "../assets/images/minor/discovered-food.png";
 import discFood2 from "../assets/images/minor/discovered-food-2.png";
@@ -211,25 +215,24 @@ const Projects = () => {
                 Instagram
               </h4>
               <ul className="my-2 md:my-4 flex flex-col gap-1 md:gap-2 font-medium text-slate-800 list-disc  text-xs md:text-sm">
+                <li className="leading-tight">HTTP only cookie secured.</li>
                 <li className="leading-tight">
-                  JWT Authentication stored in Local Storage.
+                  Users can fully customise their account.
                 </li>
                 <li className="leading-tight">
-                  Which allows users to manage their Account and track Order
-                  process.
+                  View who liked and commented the post, see followers and
+                  following of others.
                 </li>
                 <li className="leading-tight">
-                  Rating for products, Stocks are updated after order's are
-                  shipped.
+                  Advanced search functionality.
                 </li>
                 <li className="leading-tight">
-                  Admins can track sales and manage Products, Orders & Users.
+                  Our App is much more comparable with real Instagram.
                 </li>
-                <li>The App is Classic UI with all Functionalities.</li>
               </ul>
 
               <Link
-                to={"https://apna-store-49fu.onrender.com"}
+                to={"https://social-media-n4bl.onrender.com/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-blue-600 mt-5 flex items-center gap-2 text-2xl"
@@ -252,19 +255,16 @@ const Projects = () => {
               className="carouselContainer"
             >
               <div className="pimagesContainer">
-                <img className="pimages" src={instagram} alt="Instagram" />
+                <img className="pimages" src={feed} alt="Instagram" />
               </div>
               <div className="pimagesContainer">
-                <img className="pimages" src={instagram} alt="Instagram" />
+                <img className="pimages" src={profile} alt="Instagram" />
               </div>
               <div className="pimagesContainer">
-                <img className="pimages" src={instagram} alt="Instagram" />
+                <img className="pimages" src={register} alt="Instagram" />
               </div>
               <div className="pimagesContainer">
-                <img className="pimages" src={instagram} alt="Instagram" />
-              </div>
-              <div className="pimagesContainer">
-                <img className="pimages" src={instagram} alt="Instagram" />
+                <img className="pimages" src={search} alt="Instagram" />
               </div>
             </Carousel>
           </div>
