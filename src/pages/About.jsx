@@ -49,7 +49,7 @@ const About = () => {
             </p>
             <a
               className="homeInfoButton w-fit !mx-0 !static"
-              href="https://drive.google.com/file/d/15DDu8pVZ5yf0psYxaJE92w2hPwNNQvUb/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/15RugN9vss7OKjKxXOag5GO6dMOSGywtK/view?usp=drivesdk"
               target="_blank"
             >
               <>Download Resume</>
